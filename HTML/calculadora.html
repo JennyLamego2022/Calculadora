@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Calculadora Gorjeta</title>
+</head>
+<body>
+    <div class="logo"><img src="../imagens/logo.svg" alt="logo"></div>
+    <div class="calculadora">
+        
+            <div class="container1">
+                <label for="">Conta</label>
+                <input type="number" class="input conta-input">
+                <label for="">Escolha a %</label>
+                <div class="tipo">
+                    <div class="tipos tipo-5">5%</div>
+                    <div class="tipos tipo-10 active-tip">10%</div>
+                    <div class="tipos tipo-15">15%</div>
+                    <div class="tipos tipo-25">25%</div>
+                    <div class="tipos tipo-50">50%</div>
+                    <div id="tip-custom"><input type="number" class="tip-custom" placeholder="CUSTOM"></div>
+
+                </div>
+                <div class="quantidade-pessoas">
+                    <label for="">Nº de Pessoas</label>
+                    <label for="" class="erro">Não pode ser zero</label>
+                </div>
+                <input type="number" class="input pessoas-input">
+            </div>
+                              
+            
+                
+            <div class="resultado">
+                <div class="valor-gorjeta">
+                    <div class="texto">
+                        <p>Valor da Gorjeta</p>
+                        <p class="pessoas">/ pessoa</p>
+                    </div>
+                    <div class="gorjeta" id="valor-gorjeta">R$4.27</div>                   
+                </div>
+
+                <div class="total">
+                    <div class="texto">
+                        <p>Total</p>
+                        <p class="pessoas">/ pessoa</p>
+                    </div>
+                    <div class="gorjeta" id="total-gorjeta">R$32.79</div>
+                </div>
+                    <div class="reset">RESET</div>                                  
+            </div>          
+                     
+    </div>
+    <script src=""></script>
+    
+</body>
+</html>
