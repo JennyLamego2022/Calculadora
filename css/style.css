@@ -53,9 +53,11 @@ input{
 
     .tipo{
         margin-top: 0.7rem;
+        margin-left: auto;
+        margin-right: auto;
         display: grid;
-        grid-template-columns: 144px 144px;
-        row-gap: 2em;
+        grid-template-columns: 165px 165px;
+        row-gap: 1em;
         column-gap: 18px;
         margin-bottom: 2rem;
     }
