@@ -20,14 +20,14 @@
         
             <div class="container1">
                 <label for="">Conta</label>
-                <input type="number" class="input conta-input" id="input-conta" value="">
+                <input type="number"  required class="input conta-input" id="input-conta" value="">
                 <label for="">Escolha a %</label>
                 <div class="tipo">
                     <div class="tipos tipo-5" id="percent5" onclick="insert()" value="">5%</div>
-                    <div class="tipos tipo-10 active-tip" onclick="insert()" value="">10%</div>
-                    <div class="tipos tipo-15">15%</div>
-                    <div class="tipos tipo-25">25%</div>
-                    <div class="tipos tipo-50">50%</div>
+                    <div class="tipos tipo-10 active-tip" id="percent10" onclick="insert()" value="">10%</div>
+                    <div class="tipos tipo-15" id="percent15">15%</div>
+                    <div class="tipos tipo-25" id="percent25">25%</div>
+                    <div class="tipos tipo-50" id="percent50">50%</div>
                     <div id="tip-custom"><input type="number" class="tip-custom" placeholder="CUSTOM"></div>
 
                 </div>
@@ -35,7 +35,7 @@
                     <label for="" id="nPessoas">Nº de Pessoas</label>
                     <label for="" class="erro">Não pode ser zero</label>
                 </div>
-                <input type="number" class="input pessoas-input">
+                <input type="number" required class="input pessoas-input" id="pessoas">
             </div>
                               
             
