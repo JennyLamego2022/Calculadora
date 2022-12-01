@@ -5,10 +5,13 @@
 }
 
 body{
-    min-height: 3600px;
+    min-height: 2800px;
     background-color:black ;
+    /* background-image: linear-gradient(180deg, black, rgb(223, 23, 23)); */
     word-wrap: break-word;
     overflow-wrap: break-word;
+    font-family: 'Space Mono', monospace;
+    color: white;
 }
 
 section.modulo{
@@ -65,6 +68,7 @@ section img{
     text-transform: uppercase;
     letter-spacing: 12px;
     text-shadow: 10px 10px 5px black;
+    /* font-family: 'Permanent Marker', cursive; */
     
 }
 .titulo{
@@ -74,12 +78,14 @@ section img{
     margin-top: 150px;
     font-size: 3rem;
     text-shadow: 3px 5px 5px  hsl(217, 12%, 63%);
+    
 }
 
 p{
     color:white;
     text-align: center;
     font-size: 1rem;
+    /* font-family: 'Space Mono', monospace; */
    
 }
 
@@ -111,7 +117,8 @@ p{
     border-radius: 25px;
     box-shadow: 8px 8px 5px  hsl(217, 12%, 63%);
     margin: auto;
-    padding-top: 10px; */
+    padding-top: 10px;
+    text-decoration: none;
   
    
 }
@@ -152,19 +159,23 @@ p{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    text-decoration: none;
 }
 
 #card3:hover{
     transform:translateY(20px);
     transition: all 0.5s ease;
     opacity: 0.6;
+    text-decoration: underline;
+    text-decoration: none;
 }
 
 .container{
     width: 100%;
     /* max-width: 760px; */
     margin: 0 auto;
-    padding: 0 20px;    
+    padding: 0 20px;   
+     
 }
 
 .module p{
@@ -179,9 +190,15 @@ p{
     font-size: 30px;    
 }
 
-.module.content{
+.module.content1{
     padding: 40px 0;
     background-color: #ece7d5;
+    background-image: linear-gradient(180deg, black, grey);
+}
+.module.content2{
+    padding: 40px 0;
+    background-color: #ece7d5;
+    background-image: linear-gradient(180deg, grey, white);
 }
 
 .module.parallax{
@@ -203,4 +220,15 @@ p{
 
 .module.parallax{
     background-image: url(../imagens/rodape1.jpg);
+}
+.parallax-texto{
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 12px;
+    text-shadow: 10px 10px 5px black;
+}
+
+.copyright{
+    color: #000;
+    margin-top: 100px;
 }
