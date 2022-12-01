@@ -5,8 +5,10 @@
 }
 
 body{
-    min-height: 1600px;
+    min-height: 3600px;
     background-color:black ;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 section.modulo{
@@ -26,7 +28,7 @@ section.modulo:after{
     background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 80%, #000 100%);
     background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 80%, #000 100%);
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 80%, black 100%);
-    z-index: 10000;
+    z-index: 8;
 }
 
 section img{
@@ -82,20 +84,19 @@ p{
 }
 
 .cards{
-    /* display: flex; */
-    /* align-content: space-between; */
-    margin-left: 50rem;
-    margin-right: 50rem;
-    margin-top: 5rem;
-    overflow: hidden;
-    transition: all 0.8s;
-    cursor: pointer;
+    display: flex;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+   
+    /* transition: all 0.8s; */
+   cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* display: grid;
+    z-index: 10; 
+    display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-gap: 1.5em; */
+    grid-gap: 1.5em;
    
 }
 
@@ -110,7 +111,7 @@ p{
     border-radius: 25px;
     box-shadow: 8px 8px 5px  hsl(217, 12%, 63%);
     margin: auto;
-    padding-top: 10px;
+    padding-top: 10px; */
   
    
 }
@@ -122,11 +123,13 @@ p{
     margin-right: 2rem;
 }
 
-/* #card1:hover{
-    transform:sca(20px);
+#card1:hover{
+    transform:translateY(20px);
     transition: all 0.5s ease;
     opacity: 0.6;
-} */
+}
+
+
 
 #card2{
     background-image: url(../imagens/imgc1.jpg);
@@ -138,6 +141,12 @@ p{
     
 }
 
+#card2:hover{
+    transform:translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
 #card3{
     background-image: url(../imagens/calculadora1.jpg);
     background-size: contain;
@@ -145,6 +154,53 @@ p{
     background-repeat: no-repeat;
 }
 
-section.parallax{
-    background-image: url(../imagens/rodape.webp);
+#card3:hover{
+    transform:translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.container{
+    width: 100%;
+    /* max-width: 760px; */
+    margin: 0 auto;
+    padding: 0 20px;    
+}
+
+.module p{
+    margin-bottom: 40px;
+}
+
+.module:last-child{
+    margin-bottom: 0;
+}
+.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;    
+}
+
+.module.content{
+    padding: 40px 0;
+    background-color: #ece7d5;
+}
+
+.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important; 
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-backgroung-size: cover;
+    -o-backgroung-size: cover;
+}
+
+.module.parallax{
+    background-image: url(../imagens/rodape1.jpg);
 }
