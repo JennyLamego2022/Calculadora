@@ -187,7 +187,8 @@ p{
 }
 .module h2{
     margin-bottom: 40px;
-    font-size: 30px;    
+    font-size: 30px;
+    text-align: center;    
 }
 
 .module.content1{
@@ -224,11 +225,43 @@ p{
 .parallax-texto{
     text-align: center;
     font-size: 5em;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
     text-shadow: 10px 10px 5px black;
 }
 
 .copyright{
     color: #000;
     margin-top: 100px;
+}
+
+@media only screen and (max-width: 900px) {
+    .body{
+        height: auto;
+       
+    }
+
+    #texto{
+        font-size: 2.5em;
+    }
+    
+  
+    .cards{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    #card1, #card2, #card3{
+        margin-left: auto;
+        margin-right: auto;  
+      
+       
+    }
+    p{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
