@@ -14,17 +14,17 @@
     <title>Calculadora Gorjeta</title>
 </head>
 <body>
-    <div class="logo"><img src="../imagens/logo.svg" alt="logo"></div>
-    <div class="voltar"><a href="../HTML/index.html"> Home</a></div>
+    <!-- <div class="logo"><img src="../imagens/logo.svg" alt="logo"></div> -->
+    <div><button class="voltar"><a href="../HTML/index.html" id="voltar"> Home</a></button></div>
     <div class="calculadora">
         
             <div class="container1">
                 <label for="">Conta</label>
                 <input type="number"  required class="input conta-input" id="input-conta" value="">
-                <label for="">Escolha a %</label>
+                <label for="" id="escolha">Escolha a %</label>
                 <div class="tipo">
-                    <div class="tipos tipo-5" id="percent5" onclick="insert()" value="">5%</div>
-                    <div class="tipos tipo-10 active-tip" id="percent10" onclick="insert()" value="">10%</div>
+                    <div class="tipos tipo-5" id="percent5">5%</div>
+                    <div class="tipos tipo-10 active-tip" id="percent10"  value="">10%</div>
                     <div class="tipos tipo-15" id="percent15">15%</div>
                     <div class="tipos tipo-25" id="percent25">25%</div>
                     <div class="tipos tipo-50" id="percent50">50%</div>
@@ -46,7 +46,7 @@
                         <p>Valor da Gorjeta</p>
                         <p class="pessoas">/ pessoa</p>
                     </div>
-                    <div class="gorjeta" id="valor-gorjeta">R$4.27</div>                   
+                    <div class="gorjeta" id="valor-gorjeta">R$0.00</div>                   
                 </div>
 
                 <div class="total">
@@ -54,9 +54,9 @@
                         <p>Total</p>
                         <p class="pessoas">/ pessoa</p>
                     </div>
-                    <div class="gorjeta" id="total-gorjeta">R$32.79</div>
+                    <div class="gorjeta" id="total-gorjeta">R$0.00</div>
                 </div>
-                    <div class="reset">RESET</div>                                  
+                    <div class="reset" onclick="clean()">RESET</div>                                  
             </div>          
                      
     </div>

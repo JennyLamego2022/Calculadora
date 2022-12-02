@@ -1,57 +1,4 @@
-// function insert(){
-//    console.log('Olá mundo');
-// }
 
-// let num = document.getElementById('input-conta').innerHTML;
-
-
-// var inputValor = "";
-// var vconta = input.value;
-
-// var nPessoas = document.querySelector('#nPessoas');
-
-// var vGorjeta = document.getElementById();
-// var tGorjeta = document.getElementById();
-
-// var text = input.value;
-// var text = input.value;
-// console.log(conta);
-
-
-function insert(){
-    var percent = document.getElementById("percent5").value;
-    var conta = document.getElementById('input-conta').value;
-    console.log(insert);
-
-    // document.getElementById('total-gorjeta').innerHTML = inputValor;
-
-    document.getElementById('total-gorjeta').value =
-        (conta / 100)* 5;
-    }
-
-
-
-// const contaInput = document.querySelector(".input-conta");
-
-// contaInput.addEventListener("input", contaInputFun);
-
-// contaInput.value = "0.0";
-
-// let contaValue = 0.0;
-
-// function contaInputFun(){
-//     contaValue = parseFloat(contaInput.value);
-//     console.log(contaValue);
-
-// }
-
-// var percent = document.getElementById("percent5").value;
-   
-// function insert(){
-//     var percent = document.getElementById('percent5').value;
-//     var conta = document.getElementById('input-conta').value;
-//   document.getElementById('total-gorjeta').value = (conta / 100)* percent;
-//     }
 // ___________________________________________________________
 // const cinco = document.querySelector("#percent5");
 
@@ -90,12 +37,12 @@ var pessoas = document.querySelector("#pessoas");
 
         }else{
             var calculo = Number(5) * Number(valorconta.value)/ 100;
-            tGorjeta.innerHTML = calculo;
+            tGorjeta.innerHTML = "R$" + calculo.toFixed(2);
             console.log(calculo);
             console.log(valorconta.value);
         
              var porPessoa = (Number(calculo) / Number(pessoas.value));
-            pGorjeta.innerHTML = porPessoa;
+            pGorjeta.innerHTML = "R$" + porPessoa.toFixed(2);
             console.log(pessoas.value);
 
         }        
@@ -109,12 +56,12 @@ porcentagem2.addEventListener("click", function(){
 
     }else{
         var calculo = Number(10) * Number(valorconta.value)/ 100;
-        tGorjeta.innerHTML = calculo;
+        tGorjeta.innerHTML =  "R$" + calculo.toFixed(2);
         console.log(calculo);
         console.log(valorconta.value);
     
          var porPessoa = (Number(calculo) / Number(pessoas.value));
-        pGorjeta.innerHTML = porPessoa;
+        pGorjeta.innerHTML = "R$" + porPessoa.toFixed(2);
         console.log(pessoas.value);
 
     }
@@ -128,12 +75,12 @@ porcentagem3.addEventListener("click", function(){
 
     }else{
         var calculo = Number(15) * Number(valorconta.value)/ 100;
-        tGorjeta.innerHTML = calculo;
+        tGorjeta.innerHTML =  "R$" + calculo.toFixed(2);
         console.log(calculo);
         console.log(valorconta.value);
     
          var porPessoa = (Number(calculo) / Number(pessoas.value));
-        pGorjeta.innerHTML = porPessoa;
+        pGorjeta.innerHTML = "R$" + porPessoa.toFixed(2);
         console.log(pessoas.value);
 
     }
@@ -147,12 +94,12 @@ porcentagem4.addEventListener("click", function(){
 
     }else{
         var calculo = Number(25) * Number(valorconta.value)/ 100;
-        tGorjeta.innerHTML = calculo;
+        tGorjeta.innerHTML =  "R$" + calculo.toFixed(2);
         console.log(calculo);
         console.log(valorconta.value);
     
          var porPessoa = (Number(calculo) / Number(pessoas.value));
-        pGorjeta.innerHTML = porPessoa;
+        pGorjeta.innerHTML = "R$" + porPessoa.toFixed(2);
         console.log(pessoas.value);
 
     }
@@ -166,13 +113,36 @@ porcentagem5.addEventListener("click", function(){
 
     }else{
         var calculo = Number(50) * Number(valorconta.value)/ 100;
-        tGorjeta.innerHTML = calculo;
+        tGorjeta.innerHTML =  "R$" + calculo.toFixed(2);
         console.log(calculo);
         console.log(valorconta.value);
     
          var porPessoa = (Number(calculo) / Number(pessoas.value));
-        pGorjeta.innerHTML = porPessoa;
+        pGorjeta.innerHTML = "R$" + porPessoa.toFixed(2) ;
         console.log(pessoas.value);
 
     }
 })
+
+//     function porcentagemCustom(){
+
+//     if(valorconta.value == "" || pessoas.value == ""){
+//         tGorjeta.innerHTML = "Insira um valor!";
+//         pGorjeta.innerHTML = "Insira um valor!";
+
+//     }else{
+//         var calculo = parseInt (Number(tip-custom.value) * Number(valorconta.value)/ 100 , 10);
+//         tGorjeta.innerHTML = calculo;
+//         console.log(calculo);
+//         console.log(valorconta.value);
+    
+//          var porPessoa = parseInt ((Number(calculo) / Number(pessoas.value)),10);
+//         pGorjeta.innerHTML = porPessoa;
+//         console.log(pessoas.value);
+
+//     }
+// }
+
+function clean(){
+   document.getElementById("pessoa.value").innerHTML="";
+}
