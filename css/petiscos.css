@@ -12,7 +12,8 @@ body{
 .botao{
     text-align: center;
     margin-top: 25px;
-   
+    
+    
 }
 .voltar{
     text-align: center;
@@ -20,13 +21,14 @@ body{
     margin-bottom: 2.3rem;
     font-size: 18px;
     color: white;
-    text-decoration: none;    
+    text-decoration: none;
     border: 2px solid black;
     align-items: center;
     justify-content: center;
     padding: 8px;
     border-radius: 8px;
     box-shadow: 10px 10px 20px black;
+    
     
 
 }
@@ -63,43 +65,43 @@ section{
     border-radius: 10px;
 }
 
-#drink1{
-    background-image: url(../imagens/drink1.jpg);
+#pet1{
+    background-image: url(../imagens/pet1.webp.crdownload);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#drink2{
-    background-image: url(../imagens/drin12.jpeg);
+#pet2{
+    background-image: url(../imagens/pet2.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#drink3{
-    background-image: url(../imagens/drink3.jpg);
+#pet3{
+    background-image: url(../imagens/pet3.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#drink4{
-    background-image: url(../imagens/drink4.jpg);
+#pet4{
+    background-image: url(../imagens/pet4.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#drink5{
-    background-image: url(../imagens/drink10.jpeg);
+#pet5{
+    background-image: url(../imagens/pet5.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#drink6{
-    background-image: url(../imagens/drink11.jpg);
+#pet6{
+    background-image: url(../imagens/pet6.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,7 +134,7 @@ section{
            
     }
     
-    #drink1, #drin2, #drink3, #drink4, #drink5, #drink6{
+    #pet1, #pet2, #pet3, #pet4, #pet5, #pet6{
         background-size: cover;
     }
     

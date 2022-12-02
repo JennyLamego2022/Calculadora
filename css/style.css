@@ -5,10 +5,19 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: auto;
     /* background-color: hsl(185, 41%, 84%); */
     background-color: #8b5742d6;
+    background-image: linear-gradient(180deg, #8b5742d6, white);
     font-family: 'Space Mono', monospace;
+   
+}
+
+.botao{
+    text-align: center;
+    margin-top: 25px;
+    
+    
 }
 
 .voltar{
@@ -17,8 +26,7 @@ body{
     margin-bottom: 2.3rem;
     font-size: 18px;
     color: white;
-    text-decoration: none;
-    
+    text-decoration: none;    
     border: 2px solid black;
     align-items: center;
     justify-content: center;
@@ -38,11 +46,13 @@ body{
     background-color: #dcdcdc;
     display: flex;
     flex-direction: column;
+    /* gap:2rem; */
     padding: 2rem;
-    border-radius: 1.4rem 1.4rem 0 0;
+    border-radius: 1.4rem 1.4rem;
     box-shadow: 10px 10px 20px black;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
 }
 
 label{
@@ -56,7 +66,7 @@ input{
     border:none;
     outline: none;
     padding: 5px;
-    padding-right: 18px;
+    /* padding-right: 18px; */
     background-position: 17px 15px;
     background-repeat: no-repeat;
     background-color: hsl(189, 41%, 97%);
@@ -66,7 +76,7 @@ input{
     font-weight: bold;  
     font-family: 'Space Mono', monospace;
     border-radius: 8px;
-    box-shadow: 10px 10px 20px black;
+    box-shadow: 5px 5px 10px black;
     }
 
     .conta{
@@ -79,9 +89,9 @@ input{
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid-template-columns: 155px 155px;
+        grid-template-columns: 145px 145px;
         row-gap: 1em;
-        column-gap: 18px;
+        column-gap: 19px;
         margin-bottom: 2rem;
     }
 
@@ -96,7 +106,7 @@ input{
         font-size: 24px;
         border-radius: 8px;
         cursor: pointer;
-        box-shadow: 10px 10px 20px black;
+        box-shadow: 5px 5px 10px black;
         
         
     }
@@ -190,6 +200,7 @@ input{
 
     .calculadora{
         width: 990px;
+        height: 100vh;
         flex-direction: row;
         border-radius: 1.4rem;
         padding: 2.3rem;    
@@ -208,7 +219,7 @@ input{
     }
 
     .tipo{
-        grid-template-columns: 135px 135px 135px;
+        grid-template-columns: 130px 130px 130px;
         row-gap: 1.2em;
         column-gap: 17px;
         margin-bottom: 3.2rem;

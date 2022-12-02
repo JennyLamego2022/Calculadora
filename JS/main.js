@@ -29,10 +29,11 @@ var pGorjeta = document.querySelector("#valor-gorjeta");
 var tGorjeta = document.querySelector("#total-gorjeta");
 var pessoas = document.querySelector("#pessoas");
 
+
     porcentagem1.addEventListener("click", function(){
 
         if(valorconta.value == "" || pessoas.value == ""){
-            tGorjeta.innerHTML = "Insira um valor!";
+            tGorjeta.innerHTML = "Insira um valor!";            
             pGorjeta.innerHTML = "Insira um valor!";
 
         }else{
