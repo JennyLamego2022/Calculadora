@@ -22,6 +22,8 @@ const porcentagem2 = document.querySelector("#percent10");
 const porcentagem3 = document.querySelector("#percent15");
 const porcentagem4 = document.querySelector("#percent25");
 const porcentagem5 = document.querySelector("#percent50");
+const custom = document.querySelector("#custom");
+const reset = document.querySelector(".reset");
 
 const porcentagemCustom = document.querySelector(".tip-custom");
 const valorconta = document.querySelector("#input-conta");
@@ -39,6 +41,7 @@ var pessoas = document.querySelector("#pessoas");
         }else{
             var calculo = Number(5) * Number(valorconta.value)/ 100;
             tGorjeta.innerHTML = "R$" + calculo.toFixed(2);
+            // valorconta.innerHTML = "R$" + (2);
             console.log(calculo);
             console.log(valorconta.value);
         
@@ -125,25 +128,50 @@ porcentagem5.addEventListener("click", function(){
     }
 })
 
-//     function porcentagemCustom(){
+    custom.addEventListener("input", function(){
 
-//     if(valorconta.value == "" || pessoas.value == ""){
-//         tGorjeta.innerHTML = "Insira um valor!";
-//         pGorjeta.innerHTML = "Insira um valor!";
-
-//     }else{
-//         var calculo = parseInt (Number(tip-custom.value) * Number(valorconta.value)/ 100 , 10);
-//         tGorjeta.innerHTML = calculo;
-//         console.log(calculo);
-//         console.log(valorconta.value);
+        if(valorconta.value == "" || pessoas.value == ""){
+            tGorjeta.innerHTML = "Insira um valor!";
+            pGorjeta.innerHTML = "Insira um valor!";
     
-//          var porPessoa = parseInt ((Number(calculo) / Number(pessoas.value)),10);
-//         pGorjeta.innerHTML = porPessoa;
-//         console.log(pessoas.value);
+        }else{
+            var calculo = parseFloat(Number(custom.value) * Number(valorconta.value)/ 100);
+            tGorjeta.innerHTML =  "R$" + calculo.toFixed(2);
+            console.log(calculo);
+            console.log(valorconta.value);
+            console.log(custom.value);
+        
+             var porPessoa = (Number(calculo) / Number(pessoas.value));
+            pGorjeta.innerHTML = "R$" + porPessoa.toFixed(2) ;
+            console.log(pessoas.value);
+    
+        }
 
-//     }
+    })
+
+//    reset.addEventListener("click", function()){
+    
+
+//    }
+
+//    function reset(){
+//     valorconta.value = "0.0";
+
+//    }
+
+   
+
+    function clean(){
+        document.getElementById('pessoas.value').innerHTML="uyuy";
+    }
+
+// custom.addEventListener('input',tipocustom);
+
+// function tipocustom(){
+//     tipValue = parseFloat(custom.value / 100);
+
+//     tipo.forEach(function(val){
+
+        
+//     });
 // }
-
-function clean(){
-   document.getElementById("pessoa.value").innerHTML="";
-}
