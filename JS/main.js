@@ -149,29 +149,17 @@ porcentagem5.addEventListener("click", function(){
 
     })
 
-//    reset.addEventListener("click", function()){
-    
-
-//    }
-
-//    function reset(){
-//     valorconta.value = "0.0";
-
-//    }
-
-   
+ 
 
     function clean(){
-        document.getElementById('pessoas.value').innerHTML="uyuy";
+        document.getElementById('input-conta').value = "";        
+        document.getElementById('custom').value = "";
+        document.getElementById('pessoas').value = "";
+
+        pGorjeta.innerHTML = "R$" + (0).toFixed(2);
+        tGorjeta.innerHTML = "R$" + (0).toFixed(2);
+
     }
 
-// custom.addEventListener('input',tipocustom);
 
-// function tipocustom(){
-//     tipValue = parseFloat(custom.value / 100);
-
-//     tipo.forEach(function(val){
-
-        
-//     });
-// }
+ 

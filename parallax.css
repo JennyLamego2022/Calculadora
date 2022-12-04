@@ -124,7 +124,7 @@ p{
 }
 
 #card1{
-    background-image: url(../imagens/imgb1.webp);
+    background-image: url(./imagens/imgb1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 2rem;
@@ -139,7 +139,7 @@ p{
 
 
 #card2{
-    background-image: url(../imagens/pet8.jpg);
+    background-image: url(./imagens/pet8.jpg);
     /* background-size: cover; */
     background-size: contain;
     background-position: center;
@@ -155,7 +155,7 @@ p{
 }
 
 #card3{
-    background-image: url(../imagens/calc1.jpg);
+    background-image: url(./imagens/calc3.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -233,7 +233,7 @@ p{
 }
 
 .module.parallax{
-    background-image: url(../imagens/bartender.jpg);
+    background-image: url(./imagens/bartender.jpg);
 }
 .parallax-texto{
     text-align: center;
