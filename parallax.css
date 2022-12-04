@@ -113,19 +113,24 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid white;
+    border: 2px solid hsl(216, 4%, 25%);
     border-radius: 25px;
-    box-shadow: 8px 8px 5px  hsl(217, 12%, 63%);
+    box-shadow: 8px 8px 20px  hsl(216, 4%, 25%);
     margin: auto;
     padding-top: 10px;
     text-decoration: none;
+    
   
    
 }
 
 #card1{
-    background-image: url(./imagens/imgb1.webp);
-    background-size: cover;
+    /* background-image: url(./imagens/drink13.jpg); */
+    background-image: url(./imagens/drink0.jpg);
+    /* background-image: url(./imagens/drink7.jpg);
+    background-image: url(./imagens/drink14.webp); */
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     margin-right: 2rem;
 }
@@ -142,7 +147,7 @@ p{
     background-image: url(./imagens/pet8.jpg);
     /* background-size: cover; */
     background-size: contain;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     margin-right: 2rem;   
     
@@ -156,7 +161,7 @@ p{
 
 #card3{
     background-image: url(./imagens/calc3.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -173,11 +178,11 @@ p{
 #link{
     margin-bottom: 0;
     margin-top: 270px;
-    color: black;
-    font-size: 40px;
+    color: white;
+    font-size: 30px;
     text-decoration: none;
     /* text-shadow: 5px 5px 5px rgb(186, 24, 24); */
-    background-image: linear-gradient(180deg, black, white, black);
+    /* background-image: linear-gradient(180deg, black, white, black); */
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 5px;
