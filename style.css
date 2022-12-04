@@ -32,8 +32,8 @@ body{
 
 .voltar{
     text-align: center;
-    margin-top: 1.7rem;
-    margin-bottom: 2.3rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
     font-size: 18px;
     color: white;
     text-decoration: none;    
@@ -208,6 +208,8 @@ input{
         background-position: 17px 18px;
     }
 
+
+
     .calculadora{
         width: 990px;
         height: 100vh;
@@ -224,10 +226,7 @@ input{
         flex-direction: column;
     }
 
-    .conta-input{
-        margin-bottom: 3.4rem;
-    }
-
+  
     .tipo{
         grid-template-columns: 130px 130px 130px;
         row-gap: 1.2em;

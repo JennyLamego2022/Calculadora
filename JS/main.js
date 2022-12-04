@@ -154,7 +154,7 @@ porcentagem5.addEventListener("click", function(){
     function clean(){
         document.getElementById('input-conta').value = "";        
         document.getElementById('custom').value = "";
-        document.getElementById('pessoas').value = "";
+        document.getElementById('pessoas').value = "1";
 
         pGorjeta.innerHTML = "R$" + (0).toFixed(2);
         tGorjeta.innerHTML = "R$" + (0).toFixed(2);
