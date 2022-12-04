@@ -152,7 +152,7 @@ porcentagem5.addEventListener("click", function(){
  
 
     function clean(){
-        document.getElementById('input-conta').value = "";        
+        document.getElementById('input-conta').value = "0";        
         document.getElementById('custom').value = "";
         document.getElementById('pessoas').value = "1";
 
